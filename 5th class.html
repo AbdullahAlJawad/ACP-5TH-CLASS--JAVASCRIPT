@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Glenn Maxwell</title></head>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <p id="demo8"></p>
+        <script>
+             var fruits=["mango","banana","apple","pumpking","orange"];
+             document.getElementById("demo1").innerHTML=fruits.join(" this is a fruit ");
+             var cricketer=["maxwell","rabada","Nortjie","Jansen"];
+             document.getElementById("demo2").innerHTML=cricketer.pop();
+             document.getElementById("demo2").innerHTML=cricketer;
+             var browser=["chrome","edge","opera","firefox","opera gx"];
+             document.getElementById("demo3").innerHTML=browser.push("safari");
+             document.getElementById("demo3").innerHTML=browser;
+             document.getElementById("demo4").innerHTML=browser.shift();
+             document.getElementById("demo4").innerHTML=browser;
+             document.getElementById("demo5").innerHTML=browser.unshift("pipilika");
+            document.getElementById("demo5").innerHTML=browser;
+            cricketer[cricketer.length]="Holder";
+            document.getElementById("demo4").innerHTML=cricketer;
+            var bowler=["Maxwell","Warner","Head"];
+            var batsman=["Starc","Hazelwood","Abbott"];
+            const australia=bowler.concat(batsman);
+            document.getElementById('demo7').innerHTML=australia;
+            const group1=["a","b","c","d","e"];
+            const group2=group1.slice(1);
+            document.getElementById('demo8').innerHTML=group1 + "<br> <br>" + group2;
+        </script>
+    </body>
+</html>
